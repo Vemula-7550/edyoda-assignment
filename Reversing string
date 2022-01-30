@@ -1,0 +1,6 @@
+string = str(input())
+string_reverse=''
+c= len(string)-1
+for i in range(c,-1,-1):
+    string_reverse = string_reverse + string[i]
+print(string_reverse)
