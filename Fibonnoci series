@@ -1,0 +1,12 @@
+
+a=1;
+b=1;
+c=0;
+n= int(input('Fibnocci series range: '))
+i=0
+while a<n:
+    print(a)
+    c=a+b
+    a=b
+    b=c
+    i+=1
