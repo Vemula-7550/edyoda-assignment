@@ -1,0 +1,4 @@
+dict_new = {}
+for i in range(97,122):
+    dict_new[chr(i)] = i
+print(dict_new)
