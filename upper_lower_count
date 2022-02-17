@@ -1,0 +1,14 @@
+def count(s):
+
+    upper_count=0
+    lower_count=0
+    for i in range(len(s)):
+        if(s[i] != ' '):
+             if(s[i] == s[i].upper()):
+                 upper_count+=1
+             else:
+                 lower_count+=1
+    print("No. of Upper case characters :",upper_count)
+    print("No. of Lower case Characters :",lower_count)
+str = input("enter string:")
+count(str)
