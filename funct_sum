@@ -1,0 +1,8 @@
+def sum_of_list(l):
+    n = len(l)
+    s=0
+    for i in range(n):
+        s = s +l[i]
+    return s
+list_1 = [8,2,3,0,7]
+print(sum_of_list(list_1))
