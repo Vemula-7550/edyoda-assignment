@@ -1,0 +1,11 @@
+class student:
+    def __init__(self,p,c,b):
+        self.p=p
+        self.c=c
+        self.b=b
+    def mark_obtained(self):
+        return self.p+self.c+self.b
+    def percentage(self):
+        return (self.mark_obtained()/300)*100
+percent = student(80,90,40)
+print("{}".format(percent.percentage()))
