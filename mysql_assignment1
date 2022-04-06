@@ -1,0 +1,31 @@
+create table if not exists salesperson(snum int not null, sname varchar(10) not null unique, city varchar(10) not null , comm int, primary key(snum));
+
+insert into salesperson values(1001,"peel","london",12),(1002,"serres","sanjose",13),(1004,"motika","london",11),(1007,"rifkin","barcelona",15),(1003,"axelrod","newyork",10);
+
+select count(snum) as person_count from salesperson where sname like "%a";
+
+create table customer(Cnum int not null,Cname varchar(10) not null,City varchar(10) not null,Snum int, foreign key(snum) references salesperson(snum));
+
+insert into customer values(2001,"Hoffman","London",1001),(2002,"Giovanni","Rome",1003),(2003,"Liu","Sanjose",1002),(2004,"Grass","Berlin",1002),(2006,"Clemens","London",1001),(2008,"Cisneros","Sanjose",1007),(2007,"Pereira","Rome",1004);
+CREATE TABLE orders(Onum int not null,Amt int not null,Odate date not null,Cnum int,Snum int, foreign key(snum) references salesperson(snum), foreign key(Cnum) references customer(cnum);
+INSERT INTO orders(Onum,Amt,Odate,Cnum,Snum) VALUES 
+ (3001,18.69,"3-10-1990",2008,1007), 
+ (3003,767.19,"3-10-1990",2001,1001), 
+ (3002,1900.10,"3-10-1990",2007,1004), 
+ (3005,5160.45,"3-10-1990",2003,1002), 
+ (3006,1098.16,"3-10-1990",2008,1007), 
+ (3009,1713.23,"4-10-1990",2002,1003), 
+ (3007,75.75,"4-10-1990",2004,1002), 
+ (3008,4273.00,"5-10-1990",2006,1001), 
+ (3010,1309.95,"6-10-1990",2004,1002);
+
+
+ 
+SELECT sname, sum(amt) AS total FROM salesperson s JOIN orders o ON (s.snum = o.snum) GROUP BY o.snum HAVING total>2000;
+
+
+SELECT city,COUNT(snum) AS persons FROM salesperson WHERE city = "newyork";
+
+select city,count(snum) as persons from salesperson where city = "london" or city="paris" group by city;
+
+select o.snum, s.sname, count(onum), odate from salesperson s inner join orders o on(s.snum = o.snum) GROUP by o.snum,o.odate;
