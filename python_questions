@@ -1,0 +1,87 @@
+ASSIGNMENT 1.1 INTERVIEW QUESTIONS
+
+1.Differentiate between lists and tuple?
+The major difference is that a list is mutable but a tuple is immutable .
+
+2.Name four of the main data types in python?
+Numbers, strings, lists, dictionaries, tuples, files, and sets are generally considered
+the main types of data. Types, None, and  Booleans are sometimes also classified
+this way. The integer,floating-point, complex, fraction and decimal are numerical data types .
+
+3.Why are these data types known as Python’s core data types?
+They are known as the core data types because they are part of the Python
+language itself and are always available to create other objects, you usually
+need to call functions in imported modules.
+
+4.What does immutable mean and what three types of Python core data types are considered immutable?
+An immutable data type is a type of object which cannot be modified after its creation.
+Numbers, strings, and tuples in Python fall into this category. Although you cannot
+modify an immutable object in place, you can always create a new one by running an expression.
+
+5. What are operators?
+In mathematics and sometimes in computer programming, an operators is a character that represents an action.
+
+6. What are different operators in python?
+Python divides the operators in the following groups:
+1 Arithmetic operators
+2 Assignment operators
+3 Comparison operators
+4 Logical operators
+5 Identity operators
+6 Membership operators
+7 Bitwise operators
+
+7.What is the use of operators in python?
+Operators are special symbols in python that carry out arthemetic or logical computation. The value that the operator operates on is called the operend.
+
+8.What are the identity operators in Python?
+Python language offers some special type of operators like the identity operator or the membership operator
+. They are described below with examples. is and is not are the identity operators in Python. They are used to check if two values are located on the same part of the memory.
+
+9.What is the NOT operator in python?
+The NOT operator is the boolen or logical operator that implements negation in python.
+
+10.What is condconditional statement in Python?
+Conditional Statement in Python perform different computations or actions depending on whether a specific Boolean constraint evaluates to true or false. Conditional statements are handled by IF statements in Python.
+
+
+11.What is the use of if and else condition in Python?
+The “else condition” is usually used when you have to judge one statement on the basis of other.
+If one condition goes wrong, then there should be another condition that should justify the statement or logic.The if Statement in Python checks for condition x.
+
+
+
+
+12.How to use switch statement in Python?
+Python language doesn’t have a switch statement . A conditional statement in Python is handled by if statements and we saw various other ways we can use conditional statements like Python if else over here.
+
+13. What are two parts of a conditional statement?
+A conditional statement consists of two parts,a hypothesis in the 'if' clause and a conclusion in the 'then' clause.
+
+14. What are the loop control statements in Python?
+The three major loop control statements in python are as below: Break: Terminates the loop and passes the control to the statement after the loop. If a break is mentioned into a nested loop, then it is the innermost loop is where the break will initially terminate.
+
+15.Can a for loop be inside a while loop Python?
+A for loop can be inside a while loop or vice versa. Loop Control Statements: Loop control statements change execution from its normal sequence. When execution leaves a scope, all automatic objects that were created in that scope are destroyed. Python supports the following control statements.
+
+16.How to use nested loops in Python?
+Nested Loops: Python programming language allows to use one loop inside another loop.The syntax for a nested  while loop statement in Python programming language is ,a final note on loop nesting is that we can put any type of loop inside of any other type of loop.
+
+17.How do you loop through a list in Python?
+It has the ability to iterate over the items of any sequence, such as a list or a string. Syntax. If a sequence contains an expression list, it is evaluated first. Then, the first item in the sequence is assigned to the iterating variable iterating_var. Next, the statements block is executed.
+
+18.What are funfunctions in Python?
+Functions provide better modularity for your application and a high degree of code reusing.As Python gives you many built-in functions like print (), etc. but you can also create your own functions. These functions are called user-defined functions.
+
+19.What happens when you call a function in Python?
+The variables declared inside it are brought into scope.
+*example--
+Function definition is here def sum( arg1, arg2 ):
+Add both the parameters and return them.
+
+20.What is the use of Def in Python?
+It helps the program to be concise, non-repetitive, and organized. We can create a Python function using the def keyword. After creating a function we can call it by using the name of the function followed by parenthesis containing parameters of that particular function.
+
+21.What are global and local variables?
+A global variable is a variable that is accessible globally. A local variable is one that is only accessible to the current scope, such as temporary variables used in a single function definition.
+  
